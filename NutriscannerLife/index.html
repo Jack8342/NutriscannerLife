@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NutriscannerLife Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriscannerLife</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>🍎 NutriscannerLife Test</h1>
-    <div id="webcam-container"></div>
-    <div id="label-container"></div>
-    <button onclick="init()">Avvia Webcam</button>
+  <header>
+    <h1>🍎 NutriscannerLife</h1>
+    <p class="subtitle">Mangia consapevole, vivi meglio</p>
+  </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image"></script>
-    <script src="app.js"></script>
+  <main>
+    <section id="model-section">
+      <h2>Teachable Machine Image Model</h2>
+      <button id="startBtn">Avvia webcam</button>
+      <div id="webcam-container"></div>
+      <div id="label-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>NutriscannerLife</strong> • Sviluppato da <strong>Giacomo Russo</strong> 💚</p>
+  </footer>
+
+  <!-- TensorFlow.js e Teachable Machine -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+  <!-- Il nostro script -->
+  <script src="app.js"></script>
 </body>
 </html>
